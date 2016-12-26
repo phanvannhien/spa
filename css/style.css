@@ -11,6 +11,9 @@
 .padding-40{
 	padding: 40px;
 }
+.border-left {
+	border-left: 1px solid #ddd;
+}
 .inline{
 	display: inline-block;
 }
@@ -425,7 +428,7 @@ ul.ratings-result li .num{
 	padding-left: 50px;
 }
 
-.review-lists li{
+.review-lists > li{
 	padding: 20px 0;
 	border-top: 1px solid #ccc;
 }
@@ -442,7 +445,7 @@ ul.ratings-result li .num{
 }
 
 .review-table tr td{
-	padding: 5px;
+	padding: 0px;
 }
 
 .relative{
@@ -523,4 +526,43 @@ img.avatar{
 	-moz-box-shadow: 3px 3px 8px 0px rgba(179,179,179,1);
 	box-shadow: 3px 3px 8px 0px rgba(179,179,179,1);
 	margin-bottom: 20px;
+}
+
+#detail-top-info{
+	position: relative;
+	padding-bottom: 50px;
+}
+
+#detail-top-info .avatar-lg{
+	margin-top: -40px;
+	margin-right:20px;
+
+}
+.detail-content #nav-control{
+	position: absolute;
+	top: -28px;
+
+}
+.detail-content{
+	position: relative;
+	padding-top: 20px;
+}
+
+#sidebar-detail{
+	position: absolute;
+	top: -200px;
+}
+
+#items-services h4 a{
+	display: block;
+	margin-bottom: 10px;
+
+}
+#items-services h4 a:after{
+	font-family: "FontAwesome";
+	content:"\f105";
+	float: right
+}
+#items-services h4 a[aria-expanded="true"]:after{
+	content: "\f107";
 }
