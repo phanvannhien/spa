@@ -34,6 +34,7 @@
 
 .bg-grey{
 	background: #f2f6f7;
+
 }
 
 .none-bg{
@@ -86,16 +87,17 @@ a.bag-number{
 }
 a.bag-number span{
 	color: #FFF;
-    position: absolute;
-    background: #e21e5c;
-    width: 20px;
-    display: block;
-    height: 20px;
-    border-radius: 50%;
-    top: -14px;
-    font-size: 12px;
-    text-align: center;
-    line-height: 20px;
+	position: absolute;
+	background: #e21e5c;
+	width: 20px;
+	display: block;
+	height: 20px;
+	border-radius: 50%;
+	top: -14px;
+	left: 0;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
 }
 
 
@@ -135,9 +137,10 @@ a.bag-number span{
 
 }
 
+
 .btn-transparent{
-	background: none;
-	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.3);
+	
 	border: 1px solid #FFF;
 	color: #FFF;
 	padding: 7px 30px;
@@ -200,6 +203,10 @@ footer a{
 
 #modal-register-personal .modal-body{
 	position: relative;
+}
+
+.modal-content{
+	border-radius: 2px;
 }
 
 #modal-register-personal .modal-body form{
@@ -303,6 +310,17 @@ footer a{
 	font-size: 30px;
 }
 
+.item-favorite span i::before{
+	content: "\f08a";
+	color: #FFF;
+}
+
+.item-favorite span.active i::before, .item-favorite span:hover i::before{
+	content: "\f004";
+	color: #e84b7d;
+	cursor: pointer;
+}
+
 .items .item-content{
 	padding: 10px;
 }
@@ -340,13 +358,13 @@ footer a{
 .tab-center li{
 	display: inline-block;
 	float: none;
-	padding: 0 20px;
-
+	padding: 0 25px;
 }
 .tab-center li a{
 	padding: 7px 0;
 	color: #777;
 	font-weight:600;
+	font-size: 16px;
 }
 .tab-center li.active a, .tab-center li a:hover{
 	text-decoration: none;
@@ -437,6 +455,7 @@ ul.ratings-result li .num{
 
 .review-item img.avatar{
 	width: 60px;
+	margin-right: 5px;
 	height: 60px;
 }
 
@@ -468,10 +487,9 @@ img.avatar{
 }
 
 .avatar-lg{
-	width: 100px;
-	height: 100px;
+	width: 95px;
+	height: 95px;
 	border: 2px solid #FFF;
-
 }
 .avatar-lg{
 
@@ -565,4 +583,108 @@ img.avatar{
 }
 #items-services h4 a[aria-expanded="true"]:after{
 	content: "\f107";
+}
+
+#top-user{
+	background-image:url('../img/spa.jpg');
+	background-size:cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	padding: 20px 0;
+}
+
+.avatar-xlg{
+	width: 100px;
+	height: 100px;
+}
+
+#user-nav{
+	list-style: none;
+	padding: 0;
+	margin: 30px 10px 0 0;
+
+}
+
+#user-nav li{
+	margin-bottom: 10px;
+}
+
+#user-nav li a{
+	color: #888;
+
+}
+#user-nav li a{
+	display: block;
+	padding: 5px 12px;
+	border: 1px solid transparent;
+}
+
+#user-nav li a.active, #user-nav li a:hover{
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+#user-nav li a i{
+	margin-right:10px;
+}
+.product-lists .list-item{
+	border-bottom: 1px solid #ddd;
+	padding: 5px 0;
+
+}
+.product-lists .list-item h3{
+	margin-top: 0;
+}
+
+.parent-vertical {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+}
+
+.child-vertical {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.type-button{
+	padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+.type-button button{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-left: -2px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div#subscribe{
+	padding-bottom:30px;
+}
+.form-control, .btn{
+	border-radius: 2px;
+}
+.slider-handle{
+	background-color: #FFF !important;
+	background-image: none !important;
+	border: 1px solid #ddd !important;
+	
+}
+.slider-selection{
+	background: #13a9af !important;
+}
+
+
+.slider.slider-horizontal .slider-track{
+	height: 8px !important;
+}
+.sorting.selected{
+	color: #e84b7d;
+	background: #e6e6e6;
 }
